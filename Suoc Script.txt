@@ -1,3 +1,28 @@
+
+local L = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDZHUB/LibraryV2/main/Source.lua"))()
+
+local Window = L:MakeWindow({
+  Title = "THÁI BÌNH HUB", 
+  SubTitle = "By Huy384", 
+  SaveFolder = "ThaiBinhConfig.json"
+})
+
+local MainTab = Window:MakeTab({
+  Name = "Auto Farm",
+  Icon = "rbxassetid://4483345998"
+})
+
+MainTab:AddToggle({
+  Name = "Auto Farm Level",
+  Default = false,
+  Callback = function(Value)
+    _G.AutoFarm = Value
+    -- Logic farm sẽ nằm ở đây
+  end
+})
+
+L:SetNotify("Khởi Chạy", "Chào mừng Pháp Sư Thái Bình!", 3)
+
 _G.FastAttack = true
 
 if _G.FastAttack then

@@ -17,7 +17,7 @@ MainTab:AddToggle({
   Default = false,
   Callback = function(Value)
     _G.AutoFarm = Value
-    -- Logic farm sẽ nằm ở đây
+    -- Logic farm sẽ nằm đây
   end
 })
 
